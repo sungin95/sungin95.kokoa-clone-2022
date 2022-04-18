@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <!--css를 링크 해준다.-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width= , initial-scale=1.0">
+  <title>Welcome to Kokoa Talk</title>
+  <!--제목을 설정해 준다. -->
+</head>
+
+<body>
+  <div class="status-bar">
+    <!--위에 3가지 상태를 표현하기 위한 바-->
+    <div class="status-bar__column">
+      <!--각각 와이파이 시간 배터리-->
+      <span>No Service</span>
+      <i class="fas fa-wifi"></i>
+      <!--아이콘 홈페이지를 링크해서 갖고 온다. -->
+    </div>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <span>110%</span>
+      <i class="fas fa-battery-full fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </div>
+
+  <header class="welcome-header">
+    <!--welcome 담당 header-->
+    <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+    <!--큰 제목-->
+    <p class="welcome-header__text">
+      If you have a Kokoa Account, log in with your email or phone number.
+    </p>
+    <!---->
+  </header>
+
+  <form action="friends.html" method="get" id="login-form">
+    <!--get는 url을 바꾸는 방식 만약 데이터를 보내고 싶다면 서버가 있다면 post를 사용한다. 업로드 한 곳에서 post 방식이 안될 수 있다. 그러므로 get방식도 적어야 한다. -->
+    <!--3개의 인풋, 비밀번호 찾기 기능(a가 링크 기능) -->
+    <input name="username" type="text" placeholder="Email of phone number" />
+    <input name="password" type="password" placeholder="Password" />
+    <input type="submit" value="Log In" />
+    <a href="#">Find Kokoa Account or Password</a>
+  </form>
+
+  <div id="no-mobile">
+    <span>Your screen is too big ㅠㅠ</span>
+  </div>
+
+
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+  <!--script는 항상 마지막에 있어야 한다. -->
+</body>
+
+</html>

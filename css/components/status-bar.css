@@ -1,0 +1,28 @@
+
+
+.status-bar {/*상태바 전체*/
+  position: fixed;
+  width: 100%;
+  padding: 5px 3px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  
+}
+.status-bar__column {/*하나하나가 공간 33% 가지게 하기*/
+  width: 33%;
+}
+.status-bar__column:first-child span{/*천번쨰 이모티콘과 간격 조절*/
+  margin-right: 5px;
+}
+.status-bar__column:nth-child(2){/*두번째 센터*/
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child{/*외우자...ㅠㅠ*/
+  display: flex;
+  justify-content: flex-end;
+}
+.status-bar__column .fa-battery-full {/*베터리 아이콘 위치 조절*/
+  margin: 0px 5px;
+}/*오른쪽 위 3개 위치가 겹쳐서 가운데 베터리에 margin을 옆으로 줘 간격을 확보하였다. 

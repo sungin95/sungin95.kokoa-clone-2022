@@ -1,0 +1,31 @@
+.badge{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+  color: white;
+  font-weight: 600;
+}
+.badge-point{
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: tomato;
+  position: absolute;
+}
+.badge-point_empty {
+  width: 14px;
+  height: 14px;
+  border-radius: 20px;
+  border: 2px solid tomato;
+  position: absolute;
+  color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -1px;
+  right: -23px;
+}

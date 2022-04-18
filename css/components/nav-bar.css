@@ -1,0 +1,77 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding :20px 50px;
+  background-color: #f9f9fa;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);/*네비 위 테두리 색*/
+}
+.nav__list {
+  display: flex ;
+  justify-content: space-between;
+}
+.nav__link {/*flex를 써서 아이콘과 같은 크기를 만들어 봤는데 알수 없는 밑줄이 생겼다. 기회 되면 알아 보자*/
+  position: relative;
+  color: #2e363e;
+}
+
+@keyframes notificationAnimation {
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: translateY(-5px);
+  }
+  100%{
+    transform: none;
+  }
+}
+
+.nav__notification{/*카톡 몇개 와 있는지 써 있는거*/
+
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  animation: notificationAnimation 3s ease-in-out infinite;
+}
+.nav__notification--small{
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 28px;
+  bottom: 28px;
+  background-color: tomato;
+  color: white;
+  font-weight: 600;
+}
+
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.5s ease-in-out forwards;
+}
+.nav__btn:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.nav__btn:nth-child(3) {
+  animation-delay: 0.6s ;
+}
+.nav__btn:last-child {
+  animation-delay: 0.9s;
+}

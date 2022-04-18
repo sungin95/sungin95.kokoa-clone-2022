@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');/*폰트 링크*/
+@import "reset.css";
+@import "variables.css";
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/uesr-components.css";
+@import "components/badge.css";
+@import "components/icon-raw.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+body {/*바디 전체에 해당 폰트를 적용해 준다.*/
+  color: #2e363e;
+  font-family: 'Open Sans', sans-serif;
+}
+.main-screen{
+  padding: 0px var(--horizontal-space);
+}
+.welcome-header {
+  padding:90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.welcome-header__title {
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+.welcome-header__text{
+  width: 60%;
+  opacity: 0.7;
+}
